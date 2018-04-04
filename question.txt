@@ -1,0 +1,72 @@
+1. Write code to show list of Todos as follows. Ensure that you use html table with one row per todo item. 
++-------------------------------------------------------------------+
+| Todos|Home|                                               Add Todo|
++-------------------------------------------------------------------+
+|                                                                   |
+|                                Todos                              |
+|    Todos               Edit         Delete           View         |
+|    Task for Monday     <Edit Icon>  <Delete Icon>    View Details |
+|    Task for Tuesday    <Edit Icon>  <Delete Icon>    View Details |
+|    Task for Wednesday  <Edit Icon>  <Delete Icon>    View Details |
+|    Task for Thursday   <Edit Icon>  <Delete Icon>    View Details |
+|    Task for Friday     <Edit Icon>  <Delete Icon>    View Details |
++-------------------------------------------------------------------+
+2. On Click "Edit Icon" show the popup to allow editing.
++-------------------------------------------------------------------+
+| Todos|Home|                                               Add Todo|
++-------------------------------------------------------------------+
+|                                                                   |
+|                    +---------------------------+                  |
+|                    |Edit Your Todo             |                  |
+|                    | Todo:                     |                  |
+|                    |     +------------------+  |                  |
+|                    |     |<input field Todo>|  |                  |
+|                    |     +------------------+  |                  |
+|                    |                           |                  |
+|                    | Description:              |                  |
+|                    |     +------------------+  |                  |
+|                    |     |<input field Desc>|  |                  |
+|                    |     +------------------+  |                  |
+|                    |                           |                  |
+|                    | +---------------------+   |                  |
+|                    | |   Submit<Button>    |   |                  |
+|                    | +---------------------+   |                  |
+|                    +---------------------------+                  |
+|                                                                   |
++-------------------------------------------------------------------+
+
+3. On Click "Delete Icon" delete the respective todo.
+
+4. On Click "View Details" show the todo in detail as follows.
++-------------------------------------------------------------------+
+| Todos|Home|                                               Add Todo|
++-------------------------------------------------------------------+
+|                                                                   |
+|    Todo Details                                                   |
+|    <Todo Title>                                                   |
+|    <Todo Description>                                             |
++-------------------------------------------------------------------+
+5. On Click of "Add Todo". Show popup to add new todo. On submit save the new and update the list.Make sure your form tag has the id = "addTodoForm". 
++-------------------------------------------------------------------+
+| Todos|Home|                                               Add Todo|
++-------------------------------------------------------------------+
+|                                                                   |
+|                    +---------------------------+                  |
+|                    |Add Your Todo              |                  |
+|                    | Todo:                     |                  |
+|                    |     +------------------+  |                  |
+|                    |     |<input field Todo>|  |                  |
+|                    |     +------------------+  |                  |
+|                    |                           |                  |
+|                    | Description:              |                  |
+|                    |     +------------------+  |                  |
+|                    |     |<input field Desc>|  |                  |
+|                    |     +------------------+  |                  |
+|                    |                           |                  |
+|                    | +---------------------+   |                  |
+|                    | |   Submit<Button>    |   |                  |
+|                    | +---------------------+   |                  |
+|                    +---------------------------+                  |
+|                                                                   |
++-------------------------------------------------------------------+
+
