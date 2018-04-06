@@ -36,8 +36,6 @@ export const userAuthRequest = (user) => {
 
 export const userAuthRequestSuccess = (user,message,status) => {
   return {
-    // Marked Code(Toms - 2018.04.04) 
-        type: 'USER_AUTHENTICATION_REQUEST_SUCCESS',  //Please mark this line
     user:user,
     message:message,
     status:status
