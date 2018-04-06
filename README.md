@@ -49,6 +49,7 @@ $ npm install
 $ cd ./server
 $ npm start
 ```
+```bash
 - Client
 
 $ cd ./client
