@@ -2,7 +2,7 @@
 const apiUrl = "/api/";
 
 
-export const login = (user) => {console.log(user)
+export const login = (user) => {
   return (dispatch) => {
     dispatch(userAuthRequest(user));
     return fetch(apiUrl+"login", {
@@ -11,7 +11,6 @@ export const login = (user) => {console.log(user)
     }).then(response => {
       
       if(response.ok){
-        // console.log("res =",response.body)
         response.json().then(data => {
           dispatch(userAuthRequestSuccess(data.user, data.message, data.status))
           dispatch(currentUser(data.user))
@@ -50,7 +49,7 @@ export const userAuthRequestFaild = (error) => {
 }
 
 
-export const register = (user) => {console.log(user)
+export const register = (user) => {
   return (dispatch) => {
     dispatch(addNewUserRequest(user));
     return fetch(apiUrl+"register", {

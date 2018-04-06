@@ -1,13 +1,10 @@
-// ./express-server/controllers/todo.server.controller.js
 import mongoose from 'mongoose';
 
 //import models
 import User from '../models/user.model';
 
 export const login = (req, res) => {
-  console.log("loginAction  =", req.body);
   User.findOne({email:req.body.email}).exec((err, user) => {
-    console.log(user);
     if (err) {
       return res.json({ status: 400, message: 'User not found!' });
     }
@@ -26,10 +23,9 @@ export const login = (req, res) => {
 
 
 export const register = (req, res) => {
-  console.log("registerAction =", req.body)
   User.findOne({email:req.body.email}).exec((err, user) => {
     if (err) {
-      return res.json({ status: 400, 'message': 'Some Error' });
+      return res.json({ status: 400, 'message': 'Invalid Request' });
     }
     if(user){
         return res.json({ status: 201, 'message': 'Already Registered!' });                
@@ -37,14 +33,12 @@ export const register = (req, res) => {
           const newUser = new User(req.body);
           newUser.save((err, user) => {
             if (err) {
-              return res.json({ status: 400, message: 'Some Error' });
+              return res.json({ status: 400, message: 'Invalid Request' });
             }
             return res.json({ status: 200, message: 'Successfully registered.', user });
           });  
-      }
-    
+      } 
   });
-  
 }
 
 

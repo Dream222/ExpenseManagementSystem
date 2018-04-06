@@ -1,4 +1,4 @@
-// ./react-redux-client/src/reducers/todoReducer.js
+// ./react-redux-client/src/reducers/userReducer.js
 const INITIAL_STATE = {
   user:[],
   isFetching: false,

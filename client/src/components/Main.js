@@ -10,17 +10,14 @@ export default class Main extends React.Component {
        }
    }
     componentDidMount() {
-        console.log(this.props.user); 
         const currentUser = this.props.user;
         try{
             if(currentUser.status===200){
                 const user=currentUser.user;
                 this.setState({username:user.username});
-                console.log(user.username)
                 localStorage.setItem('user',JSON.stringify(user));
             }else{
                 const userString = localStorage.getItem('user');
-                console.log(userString)
                 if(userString){
                     this.setState({username:JSON.parse(userString).username});
                 }else{

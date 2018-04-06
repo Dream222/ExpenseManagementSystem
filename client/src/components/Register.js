@@ -50,6 +50,7 @@ export default class Register extends React.Component {
         var style={
             backgroundColor:"#2b2b2be6"
         }
+        
         return (
             <div>
                 <Navbar style={style}>

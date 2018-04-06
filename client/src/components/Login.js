@@ -37,14 +37,13 @@ export default class Login extends React.Component {
         const data = new FormData();
         data.append('email', this.email.value);
         data.append('password', md5(this.password.value));
-        // Marked Code(Toms - 2018.04.04) 
-            this.props.mappeduserLogin(data);   //Please mark this line
     }
 
     render() {
         var style={
             backgroundColor:"#2b2b2be6"
         }
+        
         return (
             <div>
                 <Navbar style={style}>
