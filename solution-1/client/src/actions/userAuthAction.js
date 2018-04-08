@@ -35,6 +35,7 @@ export const userAuthRequest = (user) => {
 
 export const userAuthRequestSuccess = (user,message,status) => {
   return {
+    type:'USER_AUTHENTICATION_REQUEST_SUCCESS',
     user:user,
     message:message,
     status:status

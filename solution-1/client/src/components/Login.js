@@ -37,6 +37,7 @@ export default class Login extends React.Component {
         const data = new FormData();
         data.append('email', this.email.value);
         data.append('password', md5(this.password.value));
+        this.props.mappeduserLogin(data);
     }
 
     render() {
