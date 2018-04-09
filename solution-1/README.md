@@ -69,4 +69,4 @@ $ npm start
 
 ### Project description
 
-https://docs.google.com/document/d/1o6s7ndmgt2xHAIEc-uXK0CFMoh_Fs05Owm0XopKom5U/edit
+https://docs.google.com/document/d/1o6s7ndmgt2xHAIEc-uXK0CFMoh_Fs05Owm0XopKom5U/edit?usp=sharing
