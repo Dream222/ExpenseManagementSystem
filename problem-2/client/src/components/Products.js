@@ -1,9 +1,5 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
-// import ReactTable from "react-table";
-// import "react-table/react-table.css";
-// import './css/login.css'
-// import TableComponent from "./table/tableComponent";
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import { FormGroup, ControlLabel, FormControl, Button, Navbar } from 'react-bootstrap';
 
@@ -119,7 +115,6 @@ export default class Products extends React.Component {
                     <h3 id="main">User : {this.state.username}</h3>
                     <BootstrapTable data={this.props.productArray.products}
                         options={options}
-                        pagination
                         hover
                     >
                         <TableHeaderColumn dataField="any" dataFormat={indexN} dataAlign='center' width='5%'>No</TableHeaderColumn>

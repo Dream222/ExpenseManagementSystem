@@ -1,4 +1,3 @@
-// ./react-redux-client/src/containers/Todo.js
 import { connect } from 'react-redux';
 import Home from '../components/Home';
 

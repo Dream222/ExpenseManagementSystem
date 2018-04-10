@@ -1,4 +1,3 @@
-// ./react-redux-client/src/containers/App.js
 import { connect } from 'react-redux';
 import App from '../components/App';
 

@@ -1,4 +1,3 @@
-// ./react-redux-client/src/containers/Todo.js
 import { connect } from 'react-redux';
 import * as userAuthAction from '../actions/userAuthAction';
 import Login from '../components/Login';
